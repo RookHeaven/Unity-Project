@@ -63,15 +63,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\My Game\Scripts\Mine.cs" />
-    <Compile Include="Assets\My Game\Scripts\MineSpawner.cs" />
-    <Compile Include="Assets\My Game\Scripts\MyEnemy.cs" />
-    <Compile Include="Assets\My Game\Scripts\PlayerController.cs" />
-    <Compile Include="Assets\My Game\Scripts\SpawnEnemy.cs" />
+    <Compile Include="Assets\My Game\Scripts\Homework 2\Mine.cs" />
+    <Compile Include="Assets\My Game\Scripts\Homework 2\MineSpawner.cs" />
+    <Compile Include="Assets\My Game\Scripts\Homework 2\MyEnemy.cs" />
+    <Compile Include="Assets\My Game\Scripts\Homework 3\OpenDoor.cs" />
+    <Compile Include="Assets\My Game\Scripts\Homework 3\PlayerController.cs" />
+    <Compile Include="Assets\My Game\Scripts\Homework 3\SpawnEnemy.cs" />
     <Compile Include="Assets\TutorialProject\Scripts\GameEnding.cs" />
     <Compile Include="Assets\TutorialProject\Scripts\LightFlicker.cs" />
     <Compile Include="Assets\TutorialProject\Scripts\Observer.cs" />
-    <Compile Include="Assets\TutorialProject\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\TutorialProject\Scripts\WaypointPatrol.cs" />
     <Compile Include="Assets\TutorialProject\TutorialInfo\Scripts\Readme.cs" />
     <None Include="Assets\TutorialProject\3DBeginner_Third-PartyNotice.txt" />
