@@ -4,35 +4,35 @@
 public class OpenDoor : MonoBehaviour
 {
 
-	public float smooth = 2.0f;
-	public float DoorOpenAngle = 90.0f;
+	public float _smooth = 2.0f;
+	public float _doorOpenAngle = 90.0f;
 
-	private Vector3 defaultRotation;
-	private Vector3 openRotation;
-	private bool open;
-	private bool enter;
+	private Vector3 _defaultRotation;
+	private Vector3 _openRotation;
+	private bool _open;
+	private bool _enter;
 
 
 	void Start()
 	{
-		defaultRotation = transform.eulerAngles;
-		openRotation = new Vector3(defaultRotation.x, defaultRotation.y + DoorOpenAngle, defaultRotation.z);
+		_defaultRotation = transform.eulerAngles;
+		_openRotation = new Vector3(_defaultRotation.x, _defaultRotation.y + _doorOpenAngle, _defaultRotation.z);
 	}
 
 
 	void Update()
 	{
-		if (open)
+		if (_open)
 		{
-			transform.eulerAngles = Vector3.Slerp(transform.eulerAngles, openRotation, Time.deltaTime * smooth);
+			transform.eulerAngles = Vector3.Slerp(transform.eulerAngles, _openRotation, Time.deltaTime * _smooth);
 		}
 		else
 		{
-			transform.eulerAngles = Vector3.Slerp(transform.eulerAngles, defaultRotation, Time.deltaTime * smooth);
+			transform.eulerAngles = Vector3.Slerp(transform.eulerAngles, _defaultRotation, Time.deltaTime * _smooth);
 		}
-		if (Input.GetKeyDown(KeyCode.E) && enter)
+		if (Input.GetKeyDown(KeyCode.E) && _enter)
 		{
-			open = !open;
+			_open = !_open;
 		}
 	}
 
@@ -41,7 +41,7 @@ public class OpenDoor : MonoBehaviour
 	{
 		if (collider.CompareTag("Player"))
 		{
-			enter = true;
+			_enter = true;
 		}
 	}
 
@@ -50,7 +50,7 @@ public class OpenDoor : MonoBehaviour
 	{
 		if (collider.CompareTag("Player"))
 		{
-			enter = false;
+			_enter = false;
 		}
 	}
 }

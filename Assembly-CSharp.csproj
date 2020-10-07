@@ -67,8 +67,8 @@
     <Compile Include="Assets\My Game\Scripts\Homework 2\MineSpawner.cs" />
     <Compile Include="Assets\My Game\Scripts\Homework 2\MyEnemy.cs" />
     <Compile Include="Assets\My Game\Scripts\Homework 3\OpenDoor.cs" />
-    <Compile Include="Assets\My Game\Scripts\Homework 3\PlayerController.cs" />
     <Compile Include="Assets\My Game\Scripts\Homework 3\SpawnEnemy.cs" />
+    <Compile Include="Assets\My Game\Scripts\Homework 4\PlayerController.cs" />
     <Compile Include="Assets\TutorialProject\Scripts\GameEnding.cs" />
     <Compile Include="Assets\TutorialProject\Scripts\LightFlicker.cs" />
     <Compile Include="Assets\TutorialProject\Scripts\Observer.cs" />
